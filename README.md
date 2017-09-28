@@ -1,6 +1,6 @@
-# canvas-plugin-boilerplate
+# canvas-github-demo
 
-> a boilerplate for canvas plugins
+> a demo canvas plugin using the github api
 
 ---
 

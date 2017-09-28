@@ -3,7 +3,7 @@ import { commonFunctions } from './common/functions';
 export default function (kibana) {
   return new kibana.Plugin({
     require: ['canvas'],
-    name: 'canvas-plugin-boilerplate',
+    name: 'canvas-github-demo',
     uiExports: {
       hacks: [
         // register functions and the like things with canvas
