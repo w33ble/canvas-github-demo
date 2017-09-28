@@ -1,5 +1,5 @@
-import canary from './canary';
+import githubTags from './github-tags';
 
 export const commonFunctions = [
-  canary
+  githubTags
 ];
