@@ -2,6 +2,8 @@
 
 > a demo canvas plugin using the github api
 
+![sep-29-2017 16-31-01](https://user-images.githubusercontent.com/404731/31039669-60d7e7cc-a534-11e7-98ee-610d8d071ceb.gif)
+
 ---
 
 ## development
