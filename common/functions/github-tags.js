@@ -43,7 +43,7 @@ export default new Fn({
     .then(tags => Promise.all(tags.slice(0, tagLimit).map(tag => getTagShaMemoized(tag, headers))))
     .then((rows) => ({
       type: 'datatable',
-      columns: Object.keys(rows[0]),
+      columns: Object.keys(rows[0]).map(col => ({ name: col, type: 'unknown' })),
       rows,
     }))
     .catch(err => ({
