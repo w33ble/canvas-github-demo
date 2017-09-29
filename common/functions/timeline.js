@@ -39,7 +39,7 @@ export default new Fn({
           content: row[args.name],
           start: row[args.start],
           end: row[args.end],
-          // style: args.font && args.font.spec
+          style: args.font.css,
         })),
       },
     };

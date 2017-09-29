@@ -9,7 +9,7 @@ export default new Element('timeline', {
   image: header,
   expression: 'filters | demodata | pointseries x="project" y="state" size="median(price)" | grid | render',
   render(domNode, config, handlers) {
-    const { options, data, font } = config;
+    const { options, data } = config;
     const items = data
     .filter(row => Boolean(row.content) && Boolean(row.start))
     .map(row => ({
@@ -19,5 +19,7 @@ export default new Element('timeline', {
     }));
 
     new vis.Timeline(domNode, items, options);
+
+    handlers.done();
   },
 });
