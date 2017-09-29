@@ -18,6 +18,12 @@ export default new Element('timeline', {
       end: row.end && new Date(row.end),
     }));
 
+    // clean up any existing timeline in the node
+    // THIS IS TERRIBLE, DO NOT DO THIS
+    const oldVis = domNode.querySelector('.vis-timeline');
+    if (oldVis) domNode.removeChild(oldVis);
+
+    // create the vis timeline
     new vis.Timeline(domNode, items, options);
 
     handlers.done();
