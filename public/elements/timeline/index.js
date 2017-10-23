@@ -1,9 +1,9 @@
 import vis from 'vis';
 import 'vis/dist/vis.css';
-import { Element } from 'plugins/canvas/elements/element';
 import { header } from './header.png';
 
-export default new Element('timeline', {
+export default {
+  name: 'timeline',
   displayName: 'Timeline',
   description: 'A timeline vis, for showing events over a period of time',
   image: header,
@@ -28,4 +28,4 @@ export default new Element('timeline', {
 
     handlers.done();
   },
-});
+};

@@ -1,6 +1,4 @@
-import Fn from '../../../kibana-canvas/common/functions/fn.js'; // TODO: internalize this wrapper
-
-export default new Fn({
+export default {
   name: 'timeline',
   type: 'render',
   context: {
@@ -44,4 +42,4 @@ export default new Fn({
       },
     };
   },
-});
+};

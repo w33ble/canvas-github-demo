@@ -1,6 +1,5 @@
 import axios from 'axios';
 import mem from 'mem';
-import Fn from '../../../kibana-canvas/common/functions/fn.js'; // TODO: internalize this wrapper
 
 const getTagSha = (tag, headers) => {
   return axios.get(tag.commit.url, { headers })
@@ -17,7 +16,7 @@ const getTagShaMemoized = mem(getTagSha, {
   cacheKey: tag => tag.commit.sha,
 });
 
-export default new Fn({
+export default {
   name: 'github-tags',
   type: 'datatable',
   help: 'Talk directly to the Github API and get back tabular data.',
@@ -52,4 +51,4 @@ export default new Fn({
       rows: [{ error: err.message }],
     }));
   }
-});
+};
