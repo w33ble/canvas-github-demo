@@ -5,7 +5,7 @@ import { header } from './header.png';
 export default {
   name: 'timeline',
   displayName: 'Timeline',
-  description: 'A timeline vis, for showing events over a period of time',
+  help: 'A timeline vis, for showing events over a period of time',
   image: header,
   expression: 'filters | demodata | pointseries x="project" y="state" size="median(price)" | grid | render',
   render(domNode, config, handlers) {
